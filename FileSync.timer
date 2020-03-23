@@ -1,0 +1,9 @@
+[Unit]
+Description=Unit file to synchronise files in the home directory
+
+[Timer]
+OnUnitActiveSec=10
+AccuracySec=1
+
+[Install]
+WantedBy=timers.target
