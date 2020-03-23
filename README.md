@@ -18,4 +18,9 @@ will create your unit files, and finally
 make install
 ```
 will create the symlinks to your local systemd configuration
-directory.
+directory, which if you do, you may need to run a
+```
+systemctl --user daemon-reload
+```
+afterwards to gets the changes into the current running
+daemon.
