@@ -29,5 +29,5 @@ FileSync.%: FileSync.%.m4
 
 install:
 	for f in $(unit_files); do \
-		echo ln -s $(CURDIR)/$$f $(user_home)/$(systemd_user_dir)/$$f ;\
+		ln -s $(CURDIR)/$$f $(user_home)/$(systemd_user_dir)/$$f ;\
 	done
